@@ -38,7 +38,7 @@ import "../styles/global.css";
 			<button
 				id="menu-toggle"
 				type="button"
-				class="md:hidden text-bengalica text-3xl p-2"
+				class="md:hidden text-bengalica text-3xl p-2 hover:text-bengalica-gold hover:scale-120 ease-in-out transition-all duration-100"
 				aria-label="Open navigation menu"
 				aria-expanded="false"
 				aria-controls="mobile-menu"
@@ -48,15 +48,33 @@ import "../styles/global.css";
 
 			<!-- Mobile dropdown -->
 			<ul
-				id="mobile-menu"
-				class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-[#C9D0C7] flex-col px-5 py-10 gap-20 md:hidden"
+			id="mobile-menu"
+			class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-[#C9D0C7] flex flex-col items-center py-3 md:hidden"
 			>
-				<li><a href="/bengalica/" class="text-bengalica-ink text-xl font-semibold hover:text-bengalica-gold">Home</a></li>
-				<li><a href="/bengalica/about" class="text-bengalica-ink text-xl font-semibold hover:text-bengalica-gold">About</a></li>
-				<li><a href="/bengalica/articles" class="text-bengalica-ink text-xl font-semibold hover:text-bengalica-gold">Articles</a></li>
-				<li><a href="/bengalica/contact" class="text-bengalica-ink text-xl font-semibold hover:text-bengalica-gold">Contact</a></li>
-			</ul>
+			<li class="w-full text-center border-b border-bengalica-dark/10">
+				<a href="/bengalica/" class="block py-4 text-2xl font-semibold text-bengalica-ink hover:text-bengalica-gold hover:scale-105 ease-in-out transition-all duration-200">
+				Home
+				</a>
+			</li>
 
+			<li class="w-full text-center border-b border-bengalica-dark/10">
+				<a href="/bengalica/about" class="block py-4 text-2xl font-semibold text-bengalica-ink hover:text-bengalica-gold hover:scale-105 ease-in-out transition-all duration-200">
+				About
+				</a>
+			</li>
+
+			<li class="w-full text-center border-b border-bengalica-dark/10">
+				<a href="/bengalica/articles" class="block py-4 text-2xl font-semibold text-bengalica-ink hover:text-bengalica-gold hover:scale-105 ease-in-out transition-all duration-200">
+				Articles
+				</a>
+			</li>
+
+			<li class="w-full text-center">
+				<a href="/bengalica/contact" class="block py-4 text-2xl font-semibold text-bengalica-ink hover:text-bengalica-gold hover:scale-105 ease-in-out transition-all duration-200">
+				Contact
+				</a>
+			</li>
+			</ul>
 			</nav>
 	</header>
 
@@ -99,8 +117,8 @@ import "../styles/global.css";
 					of Bengal
 				</h2>
 
-				<p class="'text-gray-500 leading-8 max-w-sm">
-					
+				<p class="text-gray-500 leading-8 max-w-sm">
+					The ways that we intend on exploring Bengal's past and present.
 				</p>
 			</div>
 
@@ -192,9 +210,94 @@ import "../styles/global.css";
 		</div>
 	</section>
 
-	<section>
 
+	<section class="bg-bengalica px-6 py-20">
+	<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+
+		<!-- Left column: Heading -->
+		<div>
+		<p class="text-bengalica-gold uppercase tracking-[0.25em] font-semibold mb-6">
+			Join our mailing list
+		</p>
+
+		<h2 class="font-brand text-white text-3xl sm:text-3xl md:text-4xl leading-tight mb-6">
+			Get notified whenever the latest articles are published<br />
+		</h2>
+
+		<div class="w-20 h-1 bg-bengalica-gold"></div>
+		</div>
+
+		<!-- Right column: Description and form -->
+		<div>
+		<p class="text-bengalica-paper text-lg leading-8 mb-8">
+			Discover new topics, explore historical perspectives, and stay
+			connected with the latest research on Bengal.
+		</p>
+
+		<form class="flex flex-col sm:flex-row gap-3">
+			<input
+			type="email"
+			name="email"
+			placeholder="Your email address"
+			required
+			class="flex-1 min-w-0 bg-white px-5 py-4 text-bengalica-ink placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-bengalica-gold"
+			/>
+
+			<button
+			type="submit"
+			class="bg-bengalica-gold text-bengalica-dark font-semibold px-8 py-4 transition-all duration-300 ease-in-out hover:bg-white hover:scale-105"
+			>
+			Subscribe
+			</button>
+		</form>
+
+		<p class="text-bengalica-paper/60 text-sm mt-4">
+			Cancel anytime. We respect your privacy.
+		</p>
+		</div>
+
+	</div>
 	</section>
+
+	<footer class="bg-bengalica-footer text-white px-8 pt-10 pb-6">
+		<div class="max-w-8xl mx-auto">
+
+			<!-- Footer identity -->
+			<div class="mb-5">
+			<a href="/bengalica/" class="font-brand text-2xl tracking-widest">
+				Bengalica
+			</a>
+
+			<p class="font-brand text-white/50 text-sm tracking-[0.2em] mt-1">
+				Centre for Bengal Studies
+			</p>
+			</div>
+
+			<!-- Divider -->
+			<div class="border-t border-white/15"></div>
+
+			<!-- Footer bottom -->
+			<div class="flex flex-col md:flex-row items-center justify-between gap-5 pt-5 text-xs tracking-wide text-white/50">
+
+			<p>
+				2026 Bengalica
+			</p>
+
+			<p class="uppercase tracking-widest">
+				History · Language · Culture
+			</p>
+
+			<a
+				href="#top"
+				class="text-white hover:text-bengalica-gold transition-colors duration-200"
+			>
+				Back to top ↑
+			</a>
+
+			</div>
+		</div>
+	</footer>
+
 	<script>
   		import "../scripts/navigation.js";
 	</script>
