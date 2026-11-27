@@ -14,3 +14,17 @@
 
     --font-brand: "Cormorant SC", serif;
 }
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
