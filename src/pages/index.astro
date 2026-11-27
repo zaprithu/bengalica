@@ -7,30 +7,55 @@ import "../styles/global.css";
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bengalica | Centre for Bengal Studies</title>
+	<link rel="icon" href="/bengalica/favicon.ico" sizes="any" />
 </head>
 <body>
 	<header class="bg-white px-8 py-5 sticky top-0 z-50 shadow-md">
 		<nav class="flex justify-between items-center max-w-8xl mx-auto">
-			<div class="flex items-center my-auto items-center gap-4">
+			<!-- Desktop Navbar-->
+			<div class="hidden md:flex items-center my-auto items-center gap-4">
 				<img
 				    src="/bengalica/images/Bengalica_icon.png"
 					alt="Bengalica emblem"
 					class="w-30 h-30 rounded-full object-cover border-2 border-bengalica-gold"
 				/>
 				<div class="mx-auto my-auto">
-					<a href="/" class="font-brand text-bengalica text-5xl">Bengalica</a>
+					<a href="/bengalica" class="font-brand text-bengalica text-5xl">Bengalica</a>
 					<h2 class="text-bengalica-gold text-lg py-2 tracking-wide">
 						Centre for Bengal Studies
 					</h2>
 				</div>
 			</div>
-			<ul class="flex items-center gap-30 font-sans text-xl text-bengalica-dark">
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/articles">Articles</a></li>
-				<li><a href="/contact">Contact</a></li>
+			<ul class="flex items-center gap-30 font-sans text-xl">
+				<li><a href="/" class="inline-block font-semibold text-xl text-bengalica-ink hover:text-bengalica-gold hover:scale-120 ease-in-out transition-all duration-100">Home</a></li>
+				<li><a href="/about" class="inline-block font-semibold text-xl text-bengalica-ink hover:text-bengalica-gold hover:scale-120 ease-in-out transition-all duration-100">About</a></li>
+				<li><a href="/articles" class="inline-block font-semibold text-xl text-bengalica-ink hover:text-bengalica-gold hover:scale-120 ease-in-out transition-all duration-100">Articles</a></li>
+				<li><a href="/contact" class="inline-block font-semibold text-xl text-bengalica-ink hover:text-bengalica-gold hover:scale-120 ease-in-out transition-all duration-100">Contact</a></li>
 			</ul>
-		</nav>
+			<!-- Mobile menu button -->
+			<button
+				id="menu-toggle"
+				type="button"
+				class="md:hidden text-bengalica text-3xl p-2"
+				aria-label="Open navigation menu"
+				aria-expanded="false"
+				aria-controls="mobile-menu"
+			>
+				☰
+			</button>
+
+			<!-- Mobile dropdown -->
+			<ul
+				id="mobile-menu"
+				class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-[#C9D0C7] flex-col p-6 gap-6 md:hidden"
+			>
+				<li><a href="/bengalica/" class="text-bengalica-ink hover:text-bengalica-gold">Home</a></li>
+				<li><a href="/bengalica/about" class="text-bengalica-ink hover:text-bengalica-gold">About</a></li>
+				<li><a href="/bengalica/articles" class="text-bengalica-ink hover:text-bengalica-gold">Articles</a></li>
+				<li><a href="/bengalica/contact" class="text-bengalica-ink hover:text-bengalica-gold">Contact</a></li>
+			</ul>
+
+			</nav>
 	</header>
 
 
@@ -63,7 +88,7 @@ import "../styles/global.css";
 		<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
 			<!--Intro Column, left-->
 			<div>
-				<p class="text-bengalica-gold uppercase tracking-[0.2em] text-xs font-semibold mb-8">
+				<p class="text-bengalica-gold uppercase tracking-[0.2em] font-semibold mb-8">
 					Areas of Research
 				</p>
 				
@@ -164,5 +189,13 @@ import "../styles/global.css";
 
 		</div>
 	</section>
+
+	<section>
+
+	</section>
+	<script>
+  		import "../scripts/navigation.js";
+	</script>
 </body>
+
 </html>
