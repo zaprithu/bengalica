@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import RecentWriting from "../components/RecentWriting.astro";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +22,7 @@ import "../styles/global.css";
 				/>
 				<div class="mx-auto my-auto">
 					<a href="/bengalica" class="font-brand text-bengalica text-3xl sm:text-4xl md:text-5xl">Bengalica</a>
-					<h2 class="text-bengalica-gold  text-sm md:text-lg py-2 tracking-wide">
+					<h2 class="text-bengalica-gold text-xs md:text-lg py-2 tracking-wide">
 						Centre for Bengal Studies
 					</h2>
 				</div>
@@ -103,7 +104,7 @@ import "../styles/global.css";
 		</div>
 	</section>
 
-	<section class="bg-bengalica-paper px-6 py-24">
+	<section class="bg-bengalica-paper px-6 py-14 md:py-24">
 		<!--Shows one column stacked on small viewports, 2 when the screen exceeds medium breakpoint-->
 		<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
 			<!--Intro Column, left-->
@@ -118,7 +119,7 @@ import "../styles/global.css";
 				</h2>
 
 				<p class="text-gray-500 leading-8 max-w-sm">
-					The ways that we intend on exploring Bengal's past and present.
+					The areas in which we intend on exploring Bengal's past and present.
 				</p>
 			</div>
 
@@ -210,6 +211,9 @@ import "../styles/global.css";
 		</div>
 	</section>
 
+	<section>
+		<RecentWriting articles={[]} />
+	</section>
 
 	<section class="bg-bengalica px-6 py-20">
 	<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
@@ -259,7 +263,7 @@ import "../styles/global.css";
 	</div>
 	</section>
 
-	<footer class="bg-bengalica-footer text-white px-8 pt-10 pb-6">
+	<footer class="bg-bengalica-footer text-white px-8 pt-5 md:pt-10 pb-6">
 		<div class="max-w-8xl mx-auto">
 
 			<!-- Footer identity -->
@@ -278,18 +282,18 @@ import "../styles/global.css";
 
 			<!-- Footer bottom -->
 			<div class="flex flex-col md:flex-row items-center justify-between gap-5 pt-5 text-xs tracking-wide text-white/50">
-
+			
 			<p>
 				2026 Bengalica
 			</p>
-
-			<p class="uppercase tracking-widest">
+			<!-- Need to figure out what to put here-->
+			<p class=" hidden uppercase tracking-widest">
 				History · Language · Culture
 			</p>
 
 			<a
 				href="#top"
-				class="text-white hover:text-bengalica-gold transition-colors duration-200"
+				class="hidden md:block text-white hover:text-bengalica-gold transition-colors duration-200"
 			>
 				Back to top ↑
 			</a>
