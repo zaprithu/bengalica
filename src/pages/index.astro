@@ -1,16 +1,168 @@
 ---
+import "../styles/global.css";
 ---
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bengalica | Centre for Bengal Studies</title>
+</head>
+<body>
+	<header class="bg-white px-8 py-5">
+		<nav class="flex justify-between items-center max-w-8xl mx-auto">
+			<div class="flex items-center my-auto items-center gap-4">
+				<img
+				   src="/public/images/Bengalica_icon.svg"
+					alt="Bengalica emblem"
+					class="w-30 h-30 rounded-full object-cover border-2 border-bengalica-gold"
+				/>
+				<div class="mx-auto my-auto">
+					<a href="/" class="font-brand text-bengalica text-5xl">Bengalica</a>
+					<h2 class="text-bengalica-gold text-lg py-2 tracking-wide">
+						Centre for Bengal Studies
+					</h2>
+				</div>
+			</div>
+			<ul class="flex items-center gap-20 font-sans text-xl text-bengalica-dark">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/articles">Articles</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<section class="bg-bengalica py-12 px-6 text-center">
+
+		<div class="mx-w-3xl mx-auto">
+
+			<p class="text-white uppercase tracking-[0.25em] text-xl mb-6">
+				An Independent Publication
+			</p>
+
+			<h1 class="font-brand text-white text-8xl font-semibold mb-4">
+				Bengalica
+			</h1>
+
+			<h2 class="text-bengalica-gold text-2xl tracking-wide mb-6">
+				A Journal of Bengal Studies
+			</h2>
+
+			<p class="text-bengalica-paper text-xl leading-8 max-w-2xl mx-auto">
+				A collaborative space dedicated to the research of Bengal’s history, language, thought, heritage, and affairs.
+			</p>
+
+			<div class="w-1/4 h-1 bg-white mx-auto mt-10"></div>
+		</div>
+	</section>
+
+	<section class="bg-bengalica-paper px-6 py-24">
+		<!--Shows one column stacked on small viewports, 2 when the screen exceeds medium breakpoint-->
+		<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+			<!--Intro Column, left-->
+			<div>
+				<p class="text-bengalica-gold uppercase tracking-[0.2em] text-xs font-semibold mb-8">
+					Areas of Research
+				</p>
+				
+				<h2 class="font-brand text-bengalica-ink text-6xl leading-tight mb-6">
+					A broad view<br/>
+					of Bengal
+				</h2>
+
+				<p class="'text-gray-500 leading-8 max-w-sm">
+					
+				</p>
+			</div>
+
+			<!-- left column -->
+			 <ul class="border-t border-[#C9D0C7]">
+
+				<!-- 01: History -->
+				<li class="grid grid-cols-[40px_1fr_30px] items-center gap-4 py-6 border-b border-[#C9D0C7]">
+					<span class="text-bengalica text-xs">01</span>
+
+					<div>
+					<h3 class="font-brand text-bengalica-ink text-2xl font-semibold">
+						History &amp; Culture
+					</h3>
+					<p class="text-gray-500 text-sm mt-1">
+						Political, social, economic, and material histories
+					</p>
+					</div>
+
+					<span class="text-bengalica text-2xl">↗</span>
+				</li>
+
+				<!-- 02: Language -->
+				<li class="grid grid-cols-[40px_1fr_30px] items-center gap-4 py-6 border-b border-[#C9D0C7]">
+					<span class="text-bengalica text-xs">02</span>
+
+					<div>
+					<h3 class="font-brand text-bengalica-ink text-2xl font-semibold">
+						Language &amp; linguistics
+					</h3>
+					<p class="text-gray-500 text-sm mt-1">
+						Historical linguistics, dialects, scripts, and language contact
+					</p>
+					</div>
+
+					<span class="text-bengalica text-2xl">↗</span>
+				</li>
+
+				<!-- 03: Literature -->
+				<li class="grid grid-cols-[40px_1fr_30px] items-center gap-4 py-6 border-b border-[#C9D0C7]">
+					<span class="text-bengalica text-xs">03</span>
+
+					<div>
+					<h3 class="font-brand text-bengalica-ink text-2xl font-semibold">
+						Literature &amp; Manuscripts
+					</h3>
+					<p class="text-gray-500 text-sm mt-1">
+						Texts, authors, genres, transmission, and reception
+					</p>
+					</div>
+
+					<span class="text-bengalica text-2xl">↗</span>
+				</li>
+
+				<!-- 04: Society -->
+				<li class="grid grid-cols-[40px_1fr_30px] items-center gap-4 py-6 border-b border-[#C9D0C7]">
+					<span class="text-bengalica text-xs">04</span>
+
+					<div>
+					<h3 class="font-brand text-bengalica-ink text-2xl font-semibold">
+						Society &amp; Religion
+					</h3>
+					<p class="text-gray-500 text-sm mt-1">
+						People, institutions, beliefs, and everyday life
+					</p>
+					</div>
+
+					<span class="text-bengalica text-2xl">↗</span>
+				</li>
+
+				<!-- 05: Politics -->
+				<li class="grid grid-cols-[40px_1fr_30px] items-center gap-4 py-6 border-b border-[#C9D0C7]">
+					<span class="text-bengalica text-xs">05</span>
+
+					<div>
+					<h3 class="font-brand text-bengalica-ink text-2xl font-semibold">
+						Politics &amp; Developments
+					</h3>
+					<p class="text-gray-500 text-sm mt-1">
+						Current affairs, political philsophies, migration, and environment
+					</p>
+					</div>
+
+					<span class="text-bengalica text-2xl">↗</span>
+				</li>
+
+			 </ul>
+
+		</div>
+	</section>
+</body>
 </html>

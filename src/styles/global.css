@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600;700&display=swap');
+
+@theme {
+    --color-bengalica: #0E5F71;
+    --color-bengalica-white: #FFFFFF;
+    --color-bengalica-light: #F7F8F7;
+    --color-bengalica-dark: #172326;
+    --color-bengalica-paper: #ECEFE8;
+    --color-bengalica-gold: #C9A45C;
+    --color-bengalica-ink: #1B3031;
+
+    --font-brand: "Cormorant SC", serif;
+}
